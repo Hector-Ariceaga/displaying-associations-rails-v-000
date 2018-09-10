@@ -3,5 +3,4 @@
 <!-- Add code here to link to the post's category. -->
 
 <p><%= @post.description %></p>
-
-<h1><%= Time.now %></h1>
+<p><%= link_to @post.category, category_path(@post.category) %></p>
